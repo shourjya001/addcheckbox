@@ -87,9 +87,9 @@ function init() {
 
                             alert("Successfully updated..");
 
-                            setTimeout(function() {
-                                location.reload(true);
-                            }, 10000000);
+                            // setTimeout(function() {
+                            //     location.reload(true);
+                            // }, 10000000);
                         }
                     } else {
                         var htmlDiv = document.getElementById("htmldiv");
@@ -105,6 +105,7 @@ function init() {
             };
 
             xhr.send(data);
+            return false; // Prevent default form submission behavior
         };
     }
 }
