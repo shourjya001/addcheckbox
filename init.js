@@ -82,7 +82,7 @@ function init() {
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
                     var response = eval('(' + xhr.responseText + ')');
-                    if (response.id === 'uccess') {
+                    if (response.id === 'success') {
                         var htmlDiv = document.getElementById("htmldiv");
                         if (htmlDiv) {
                             htmlDiv.innerHTML = "Successfully Updated..";
